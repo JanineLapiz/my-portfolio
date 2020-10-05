@@ -1,0 +1,266 @@
+//font-family: 'Source Sans Pro', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+//font-family: 'Kalam', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+@mixin flex($direction, $justification, $alignment) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justification;
+    align-items: $alignment;
+}
+
+@mixin dimensions($width, $height, $margin, $padding) {
+    box-sizing: border-box;
+    width: $width;
+    height: $height;
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin box-shadow($offset, $range) {
+    box-shadow: $offset $range rgba(15, 2, 18, 0.2);
+}
+
+$dark-purple: rgb(14, 3, 15);
+$purple: rgb(58, 24, 61);
+$orange: rgb(232, 92, 37);
+$grey: #afafaf;
+
+::selection {
+    background: rgba(58, 24, 61, 0.3);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #fefefe;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+//------------------side menu-----------------//
+.open-sm {
+    @include flex(column, space-around, none);
+    @include dimensions(280px, 100vh, 0, 60px 30px 30px 30px);
+    @include box-shadow(0 7px, 5px 5px);
+    position: fixed;
+    background: #efefef;
+    z-index: 9;
+    color: $purple;
+    opacity: 0.98;
+    font-size: 16px;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    transition: ease 0.5s;
+    border-right: 5px solid $purple;
+    .selection {
+        padding: 10px 5px;
+        border-bottom: 3px solid $purple;
+        border-radius: 5px;
+    } 
+    .selection:hover {
+        background: rgba(232, 92, 37, 0.3);
+        border-left: 5px solid $orange;
+        padding: 10px;
+        transition: all ease 0.5s;
+        cursor: pointer;
+    }
+    #menu-title {
+        text-align: center;
+        font-size: 18px;
+        border: 4px solid $purple;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-family: 'Kalam', cursive;
+    }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include dimensions(190px, 40px, 10px 0 0 30px, 0)
+    }
+    #contact {
+        background: rgba(232, 92, 37, 0.7);
+        border: none;
+        padding: 7px;
+        margin-top: 10px;
+        margin: 0 auto;
+        border-radius: 5px;
+        width: 50%;
+        transition: ease 0.5s;
+        cursor: pointer;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size: 16px;
+        @include box-shadow(5px, 5px);
+        &:hover {
+            background: rgba(232, 92, 37, 1);
+            width: 60%;
+            color: white;
+            animation: none;
+        }
+    }
+}
+.close-sm {
+    #menu-title {
+        border: none;
+    }
+    color: rgba(0, 0, 0, 0);
+    white-space: nowrap;
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    flex-wrap: none;
+    transition: ease 0.5s;
+    
+}
+//--------------------------------------------//
+
+//-----------------menu button---------------//
+.open-menu {
+    position: fixed;
+    @include flex(column, space-evenly, center);
+    z-index: 10;
+    width: 45px;
+    height: 40px;
+    top: 0;
+    right: 25px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 5px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    span {
+        width: 30px;
+        height: 3px;
+        border-radius: 20px;
+        background: $purple;
+        transition: all ease 0.5s;
+    }
+}
+.close-menu {
+    span {
+        position: absolute;
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+        &:nth-child(2){
+            transform: rotate(-45deg);
+        }
+        &:nth-child(3){
+            height: 0;
+            width: 0;
+            background: 0;
+        }
+    }
+}
+//--------------------------------------------//
+
+//----------------body container--------------//
+.norm-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.adj-body {
+    width: calc(100vw - 280px);
+}
+
+//--------------------------------------------//
+
+//---------------------home-------------------//
+@keyframes flash {
+    from {
+        background: rgba(232, 92, 37, 0.3);
+    }
+    to {
+        background: rgba(58, 24, 61, 0.3);
+    }
+}
+
+#home {
+    @include dimensions(none, 100vh, 0, 0);
+    @include flex(column, center, center);
+    color: $purple;
+    h1 {
+        font-size: 32px;
+        font-family: 'Kalam', cursive;
+    }
+    p {
+        font-size: 18px;
+    }
+    #my-name {
+        padding: 7px;
+        border-radius: 3px;
+    }
+    
+}
+//--------------------------------------------//
+
+//-----------------main content---------------//
+.main-content {
+    @include dimensions(none, none, 0, 0 5%);
+    h2 { 
+        font-size: 30px; 
+        font-family: 'Kalam', cursive; 
+    }
+    h3 { font-size: 22px; padding: 0 5%; }
+}
+span {
+    height: 8px;
+    width: 93%;
+    margin: 0 auto;
+    background: $grey;
+}
+#about-me {
+    margin-bottom: 5%;
+    p {
+        margin: 0 5%;
+        padding: 1% 2%;
+        text-align: justify;
+        font-size: 15px;
+        border-left: 5px solid $purple;
+        width: 80%
+    }
+}
+//--------------------------------------------//
+
+//-------------------projects-----------------//
+#projects {
+    a {
+        text-decoration: none;
+        font-size: 18px;
+        color: $purple;
+        figcaption { 
+            text-align: center;
+            margin: 5px 0; 
+        }
+        figure {
+            @include box-shadow(5px, 5px);
+            @include flex(column, space-between, center);
+            width: 200px;
+            height: 240px;
+            border: 7px solid rgba(232, 92, 37, 0.5);
+            border-radius: 2px;
+            box-sizing: border-box;
+            opacity: 0.9;
+            transition: ease 0.5s;
+            &:hover {
+                opacity: 1.1;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    #cp-projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-gap: 20px;
+    }    
+}
+

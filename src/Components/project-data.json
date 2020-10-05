@@ -1,0 +1,27 @@
+{
+    "codepen": [
+        {"name": "Pomodoro Clock",
+        "url": "https://codepen.io/BlueberryFridge/pen/gOrowYZ",
+        "img-url": "./project-data/pomodoro-clock.png"
+        },
+        {"name": "Markdown Editor and Previewer",
+        "url": "https://codepen.io/BlueberryFridge/pen/eYZdaEK",
+        "img-url": "./project-data/md-editor.png"
+        },
+        {"name": "JavaScript Calculator",
+        "url": "https://codepen.io/BlueberryFridge/pen/RwaVeMe",
+        "img-url": "./project-data/js-calc.png"
+        },
+        {"name": "Drum Machine",
+        "url": "https://codepen.io/BlueberryFridge/pen/MWybVyz",
+        "img-url": "./project-data/drum-machine.png"
+        },
+        {"name": "Random Quote Generator",
+        "url": "https://codepen.io/BlueberryFridge/pen/BaKomWy",
+        "img-url": "./project-data/quote-gen.png"
+        }
+    ],
+    "github": [
+        
+    ]
+}
