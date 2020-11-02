@@ -37,6 +37,17 @@ export default function Contact() {
                     <div className='col-6 col-md-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
+                                <span className='fa fa-free-code-camp menu-icon' />
+                            </div>
+                            <div className='card-body'>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://www.freecodecamp.org/blueberryfridge'>freeCodeCamp</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className='col-6 col-md-2 text-center my-5'>
+                        <div className='card'>
+                            <div className='card-header'>
                                 <span className='fa fa-linkedin menu-icon' />
                             </div>
                             <div className='card-body'>
