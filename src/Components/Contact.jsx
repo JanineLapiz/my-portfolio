@@ -12,7 +12,7 @@ export default function Contact() {
             <h3>Contact and Profiles</h3>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <span className='fa fa-github menu-icon' />
@@ -23,7 +23,7 @@ export default function Contact() {
                         </div>
                     </div>
                     
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <span className='fa fa-codepen menu-icon' />
@@ -34,7 +34,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <span className='fa fa-free-code-camp menu-icon' />
@@ -45,7 +45,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <span className='fa fa-linkedin menu-icon' />
@@ -56,7 +56,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <span className='fa fa-google menu-icon' />
@@ -68,7 +68,7 @@ export default function Contact() {
                         </div>
                     </div>
 
-                    <div className='col-6 col-md-2 text-center my-5'>
+                    <div className='col-12 col-sm-4 col-lg-3 col-xl-2 text-center my-5'>
                         <div className='card'>
                             <div className='card-header'>
                                 <div className='card-title'>indeed</div>
