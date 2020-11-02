@@ -1,0 +1,43 @@
+{
+    "codepen": [
+        {"id": 1,
+        "name": "Pomodoro Clock",
+        "url": "https://codepen.io/BlueberryFridge/pen/gOrowYZ",
+        "img-url": "./project-data/pomodoro-clock.png"
+        },
+        {"id": 2,
+        "name": "Markdown Editor and Previewer",
+        "url": "https://codepen.io/BlueberryFridge/pen/eYZdaEK",
+        "img-url": "./project-data/md-editor.png"
+        },
+        {"id": 3,
+        "name": "JavaScript Calculator",
+        "url": "https://codepen.io/BlueberryFridge/pen/RwaVeMe",
+        "img-url": "./project-data/js-calc.png"
+        },
+        {"id": 4,
+        "name": "Drum Machine",
+        "url": "https://codepen.io/BlueberryFridge/pen/MWybVyz",
+        "img-url": "./project-data/drum-machine.png"
+        },
+        {"id": 5,
+        "name": "Random Quote Generator",
+        "url": "https://codepen.io/BlueberryFridge/pen/BaKomWy",
+        "img-url": "./project-data/quote-gen.png"
+        }
+    ],
+    "heroku": [
+        {"id": 6,
+        "name": "Inventory App",
+        "url": "https://shielded-ridge-27315.herokuapp.com/inventory",
+        "img-url": "./project-data/inventory-app.png",
+        "repository": "https://github.com/BlueberryFridge/inventory-app"
+        },
+        {"id": 7,
+        "name": "My Portfolio",
+        "url": "https://damp-badlands-08236.herokuapp.com/",
+        "img-url": "./project-data/my-portfolio.png",
+        "repository": "https://github.com/BlueberryFridge/my-portfolio"
+        }
+    ]
+}
