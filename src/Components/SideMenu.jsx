@@ -14,14 +14,14 @@ export default function SideMenu(props) {
             </button>
             <nav id="menu-body" className={`open-sm ${isMenuClicked ? 'close-sm' : ''}`}>
                 <div id="menu-title">My Developer Portfolio</div>
-                <div id="home-menu" className='selection'><a href='#home'>Home</a></div>
-                <div id="bio" className='selection'><a href='#about-me'>About Me</a></div>
+                <a href='#home'><div id="home-menu" className='selection'>Home</div></a>
+                <a href='#about-me'><div id="bio" className='selection'>About Me</div></a>
                 <div id="projects">
                     <div id='projects'>Projects</div>
-                    <div id="codepen" className='projects-selection selection'><a href='#cp-projects'>CodePen</a></div>
-                    <div id="github" className='projects-selection selection'><a href='#heroku-projects'>Heroku</a></div>
+                    <a href='#cp-projects'><div id="codepen" className='projects-selection selection'>CodePen</div></a>
+                    <a href='#heroku-projects'><div id="github" className='projects-selection selection'>Heroku</div></a>
                 </div>
-                <div id="accomp-menu" className='selection'><a href='#accomp'>Accomplishments</a></div>
+                <a href='#accomp'><div id="accomp-menu" className='selection'>Accomplishments</div></a>
                 <a role='button' id="contactBtn" href='#contact' className='btn'>Contact Me</a>
             </nav>
         </>

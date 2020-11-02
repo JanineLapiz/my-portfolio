@@ -14,7 +14,6 @@ export default function Home(props) {
 
     return (
         <div id='home'>
-            
             <h1>
                 Salut et bienvenue!
             </h1>
