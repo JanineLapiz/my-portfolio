@@ -9,9 +9,9 @@ export default function Projects() {
             
             <div id='cp-projects' className='my-5'>
                 <h3>CodePen</h3>
-                <div class="projects">{data.codepen.map(item => {
+                <div className="projects px-5 py-3">{data.projects.codepen.map(item => {
                     return (
-                    <a role='button' class='btn' href={item.url} target='_blank' rel='noreferrer'><figure>
+                    <a role='button' className='btn mx-5' href={item.url} target='_blank' rel='noreferrer' key={item.id}><figure>
                         <img src={item['img-url']} alt={item.name} />
                         <figcaption>{item.name}</figcaption>
                     </figure></a>
@@ -21,9 +21,9 @@ export default function Projects() {
             
             <div id='heroku-projects' className='my-5'>
                 <h3>Heroku</h3>
-                <div class="projects">{data.heroku.map(item => {
+                <div class="projects px-5 py-3">{data.projects.heroku.map(item => {
                     return (
-                    <figure>
+                    <figure key={item.id} className='mx-5'>
                         <img src={item["img-url"]} alt={item.name} />
                         <figcaption class='col px-2'>
                             <a role='button' className='btn btn-dark btn-block mt-3' href={item['img-url']} target='_blank' rel='noreferrer'>{item.name}</a> 

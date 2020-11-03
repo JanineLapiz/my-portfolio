@@ -18,7 +18,7 @@ export default function Contact() {
                                 <span className='fa fa-github menu-icon' />
                             </div>
                             <div className='card-body'>
-                                <a role='button' className='btn btn-dark btn-sm' href='https://github.com/BlueberryFridge'>GitHub</a>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://github.com/BlueberryFridge' target='_blank'>GitHub</a>
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ export default function Contact() {
                                 <span className='fa fa-codepen menu-icon' />
                             </div>
                             <div className='card-body'>
-                                <a role='button' className='btn btn-dark btn-sm' href='https://codepen.io/BlueberryFridge'>CodePen</a>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://codepen.io/BlueberryFridge' target='_blank'>CodePen</a>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ export default function Contact() {
                                 <span className='fa fa-free-code-camp menu-icon' />
                             </div>
                             <div className='card-body'>
-                                <a role='button' className='btn btn-dark btn-sm' href='https://www.freecodecamp.org/blueberryfridge'>freeCodeCamp</a>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://www.freecodecamp.org/blueberryfridge' target='_blank'>freeCodeCamp</a>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export default function Contact() {
                                 <span className='fa fa-linkedin menu-icon' />
                             </div>
                             <div className='card-body'>
-                                <a role='button' className='btn btn-dark btn-sm' href='https://www.linkedin.com/in/janinelapiz/'>LinkedIn</a>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://www.linkedin.com/in/janinelapiz/' target='_blank'>LinkedIn</a>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ export default function Contact() {
                                 <div className='card-title'>indeed</div>
                             </div>
                             <div className='card-body'>
-                                <a role='button' className='btn btn-dark btn-sm' href='https://my.indeed.com/p/janinel-r17eh31'>Indeed</a>
+                                <a role='button' className='btn btn-dark btn-sm' href='https://my.indeed.com/p/janinel-r17eh31' target='_blank'>Indeed</a>
                             </div>
                         </div>
                     </div>
