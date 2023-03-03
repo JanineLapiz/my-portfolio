@@ -1,0 +1,39 @@
+.open-menu {
+  position: fixed;
+  @include flex(column, space-evenly, center);
+  z-index: 10;
+  width: 45px;
+  height: 40px;
+  top: 0;
+  right: 25px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  span {
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background: $purple;
+    transition: all ease 0.5s;
+  }
+}
+.close-menu {
+  span {
+    position: absolute;
+    &:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    &:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+    &:nth-child(3) {
+      height: 0;
+      width: 0;
+      background: 0;
+    }
+  }
+}

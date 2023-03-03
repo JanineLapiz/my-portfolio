@@ -1,0 +1,28 @@
+.main-content {
+  @include dimensions(none, none, 0, 0 5%);
+  h2 {
+    font-size: 30px;
+    font-family: 'Kalam', cursive;
+  }
+  h3 {
+    font-size: 22px;
+    padding: 0 5%;
+  }
+}
+.page-breaker {
+  height: 8px;
+  width: 93%;
+  margin: 0 auto;
+  background: $grey;
+}
+#about-me {
+  margin-bottom: 5%;
+  p {
+    margin: 0 5%;
+    padding: 1% 2%;
+    text-align: justify;
+    font-size: 15px;
+    border-left: 5px solid $purple;
+    width: 80%;
+  }
+}
