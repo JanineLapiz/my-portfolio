@@ -20,6 +20,10 @@ This app is hosted at [my-portfolio-afcf3.web.app](my-portfolio-afcf3.web.app).
    ```
    $ pnpm i
    ```
+5. Serve app locally
+   ```
+   $ pnpm dev
+   ```
 
 # Deploy
 
