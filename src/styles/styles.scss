@@ -127,9 +127,6 @@ a {
   }
 }
 .close-sm {
-  #menu-title {
-    border: none;
-  }
   color: rgba(0, 0, 0, 0);
   white-space: nowrap;
   width: 0;
@@ -137,6 +134,9 @@ a {
   padding: 0;
   flex-wrap: none;
   transition: ease 0.5s;
+  & #menu-title {
+    border: none;
+  }
 }
 //--------------------------------------------//
 
