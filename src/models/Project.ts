@@ -4,5 +4,5 @@ export type Project = {
   description?: string;
   iconUrl?: string;
   clientUrl?: string;
-  codeUrl: string;
+  repoUrl: string;
 };

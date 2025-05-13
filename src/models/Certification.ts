@@ -1,8 +1,8 @@
 export type Certification = {
-  id: number;
+  id: string;
   title: string;
   issuedBy: string;
-  issuedDateTimeIsoUtc: string;
-  expiresDateTimeIsoUtc?: string;
+  issuedDate: string;
+  expiresDate?: string;
   url?: string;
 };
