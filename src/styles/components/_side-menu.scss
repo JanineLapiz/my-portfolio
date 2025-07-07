@@ -1,0 +1,76 @@
+@use 'commons/colours' as colours;
+
+.open-sm {
+  @include flex(column, space-around, none);
+  @include dimensions(280px, 100vh, 0, 60px 30px 30px 30px);
+  @include box-shadow(0 7px, 5px 5px);
+  position: fixed;
+  background: #efefef;
+  z-index: 9;
+  color: $purple;
+  opacity: 0.98;
+  font-size: 16px;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+  transition: ease 0.5s;
+  border-right: 5px solid $purple;
+  .selection {
+    padding: 10px 5px;
+    border-bottom: 3px solid $purple;
+    border-radius: 5px;
+  }
+  .selection:hover {
+    background: rgba(232, 92, 37, 0.3);
+    border-left: 5px solid $orange;
+    padding: 10px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  #menu-title {
+    text-align: center;
+    font-size: 18px;
+    border: 4px solid $purple;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Kalam', cursive;
+  }
+  .projects-selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    @include dimensions(190px, 40px, 10px 0 0 30px, 0);
+  }
+  #contactBtn {
+    background: #{colours.$orange}70;
+    border: none;
+    padding: 7px;
+    margin-top: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 50%;
+    transition: ease 0.5s;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    @include box-shadow(5px, 5px);
+    &:hover {
+      background: rgba(232, 92, 37, 1);
+      width: 60%;
+      color: white;
+      animation: none;
+    }
+  }
+}
+.close-sm {
+  #menu-title {
+    border: none;
+  }
+  color: rgba(0, 0, 0, 0);
+  white-space: nowrap;
+  width: 0;
+  overflow: hidden;
+  padding: 0;
+  flex-wrap: none;
+  transition: ease 0.5s;
+}

@@ -1,0 +1,25 @@
+@keyframes flash {
+  from {
+    background: rgba(232, 92, 37, 0.3);
+  }
+  to {
+    background: rgba(58, 24, 61, 0.3);
+  }
+}
+
+#home {
+  @include dimensions(none, 100vh, 0, 0);
+  @include flex(column, center, center);
+  color: $purple;
+  h1 {
+    font-size: 32px;
+    font-family: 'Kalam', cursive;
+  }
+  p {
+    font-size: 18px;
+  }
+  #my-name {
+    padding: 7px;
+    border-radius: 3px;
+  }
+}
