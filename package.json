@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "clean": "rm -rf node_modules dist"
+    "clean": "rm -rf node_modules dist",
+    "test": "jest"
   },
   "keywords": [],
   "repository": "git@github.com:JanineLapiz/my-portfolio.git",
@@ -28,18 +29,21 @@
     "node": "22.14.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
     "css-loader": "^6.7.1",
     "html-loader": "^3.1.2",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^30.0.4",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.1",
     "prettier": "^3.3.3",
     "sass": "^1.53.0",
     "sass-loader": "^13.0.1",
     "style-loader": "^3.3.1",
+    "ts-jest": "^29.4.0",
     "ts-loader": "^9.3.1",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.4",
