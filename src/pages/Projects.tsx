@@ -1,5 +1,4 @@
-import * as React from "react";
-import { projects } from "../index";
+import { projects } from '../index';
 
 export const Projects = (): JSX.Element => {
   return (
