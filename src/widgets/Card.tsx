@@ -4,7 +4,7 @@ import { safeConcatStrings } from '../utils/safeConcatStrings';
 export type CardProps = {
   additionalClassNames?: string;
   title: string;
-  icon?: string;
+  icon?: React.ReactNode;
   onClick?: () => void;
 };
 

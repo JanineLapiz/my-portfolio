@@ -1,13 +1,13 @@
-export enum ProfileProvider {
+export enum ProfileHost {
   INDEED = 'Indeed',
   LINKED_IN = 'LinkedIn',
   GITHUB = 'GitHub',
   CODEPEN = 'CodePen',
-  FREE_CODE_CAMP = 'freeCodeCamp',
+  FREE_CODE_CAMP = 'freeCodeCamp'
 }
 
 export type Profile = {
   icon: JSX.Element;
-  provider: ProfileProvider;
+  host: ProfileHost;
   url: string;
 };
